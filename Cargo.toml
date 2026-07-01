@@ -18,7 +18,9 @@ embassy-futures = { version = "0.1", default-features = false }
 heapless = { version = "0.9", default-features = false }
 bitflags = { version = "2.5", default-features = false }
 embassy-net-driver-channel = { version = "0.4", default-features = false }
-esp-radio = { version = "0.18", default-features = false }
+# 1.0.0-beta.0 carries the IEEE 802.15.4 AR-bit fix needed for reliable
+# fragmented Thread RX on esp32c6 (upstream still pins 0.18).
+esp-radio = { version = "1.0.0-beta.0", default-features = false }
 embassy-nrf = { version = "0.10", default-features = false }
 portable-atomic = { version = "1", default-features = false }
 
